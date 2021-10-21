@@ -14,7 +14,25 @@ matches:
   - trigger: "aass"
     replace: "Qualquer dúvida, estou à disposição\nAbs,\nNicholas"
 
-  # ASC II Icons
+  - trigger: "ccheck"
+    replace: "✔️"
+
+  - trigger: "wwrong"
+    replace: "✖️"
+
+  - trigger: "==>"
+    replace: "→"
+
+  - trigger: "<=="
+    replace: "←"
+
+  - trigger: "==^"
+    replace: "↑"
+
+  - trigger: "==v"
+    replace: "↓"
+
+  # ASC II Icons & Symbols
   - trigger: ":wtf"
     replace: "¯\\_(ツ)_/¯"
 
@@ -40,6 +58,28 @@ matches:
         type: date
         params:
           format: "%Y.%m.%d"
+
+  # HTML
+  - trigger: ">>html"
+    replace: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://unpkg.com/modesto@latest/modesto.min.css">
+
+      <title></title>
+      </head>
+      <body>
+      $|$
+      </body>
+      </html>
+  
+  - trigger: ">>modesto"
+    replace: "<link rel=\"stylesheet\" href=\"https://unpkg.com/modesto@latest/modesto.min.css\">\n"
 
   # Shell commands
   - trigger: ">>shell"
