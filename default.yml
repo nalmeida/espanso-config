@@ -1,0 +1,51 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: "aabs"
+    replace: "Abs,\nNicholas ºLº,"
+
+  - trigger: "aass"
+    replace: "Qualquer dúvida, estou à disposição\nAbs,\nNicholas"
+
+  # ASC II Icons
+  - trigger: ":wtf"
+    replace: "¯\\_(ツ)_/¯"
+
+  - trigger: ":ye"
+    replace: "ᕙ(ºL,º)ᕗ"
+
+  - trigger: ":fuck"
+    replace: "(⋟﹏⋞)"
+
+  # Dates
+  - trigger: "ddate"
+    replace: "{{ndate}}"
+    vars:
+      - name: ndate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+  - trigger: "fdate"
+    replace: "{{fdate}}"
+    vars:
+      - name: fdate
+        type: date
+        params:
+          format: "%Y.%m.%d"
+
+  # Shell commands
+  - trigger: ">>shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo Hello from your shell"
