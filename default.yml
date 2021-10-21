@@ -42,6 +42,9 @@ matches:
   - trigger: ":fuck"
     replace: "(⋟﹏⋞)"
 
+  - trigger: ":sad"
+    replace: "(╥_╥)"
+
   # Dates
   - trigger: "ddate"
     replace: "{{ndate}}"
