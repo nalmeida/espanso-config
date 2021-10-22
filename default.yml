@@ -11,6 +11,9 @@ matches:
   - trigger: "aabs"
     replace: "Abs,\nNicholas ºLº,"
 
+  - trigger: "bbest"
+    replace: "Best,\nNicholas"
+
   - trigger: "aass"
     replace: "Qualquer dúvida, estou à disposição\nAbs,\nNicholas"
 
