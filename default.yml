@@ -48,7 +48,7 @@ matches:
   - trigger: ":sad"
     replace: "(╥_╥)"
 
-  # Dates
+  # Dates & Time
   - trigger: "ddate"
     replace: "{{ndate}}"
     vars:
@@ -64,6 +64,14 @@ matches:
         type: date
         params:
           format: "%Y.%m.%d"
+
+  - trigger: "ttime"
+    replace: "{{time}}"
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%Hh%M"
 
   # HTML
   - trigger: ">>html"
