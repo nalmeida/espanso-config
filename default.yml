@@ -48,6 +48,10 @@ matches:
   - trigger: ":sad"
     replace: "(╥_╥)"
 
+  # URL
+  - trigger: ":jit"
+    replace: "https://meet.jit.si/nalmeida"
+
   # Dates & Time
   - trigger: "ddate"
     replace: "{{ndate}}"
