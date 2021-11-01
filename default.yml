@@ -17,11 +17,11 @@ matches:
   - trigger: "aass"
     replace: "Qualquer dúvida, estou à disposição\nAbs,\nNicholas"
 
-  - trigger: "ccheck"
-    replace: "✔️"
+  - triggers: ["ccheck", "ttick"]
+    replace: "✓"
 
   - trigger: "wwrong"
-    replace: "✖️"
+    replace: "✗"
 
   - trigger: "==>"
     replace: "→"
@@ -48,8 +48,11 @@ matches:
   - trigger: ":sad"
     replace: "(╥_╥)"
 
+  - trigger: ":zen"
+    replace: "⊹╰(⌣ʟ⌣)╯⊹"
+
   # URL
-  - trigger: ":jit"
+  - trigger: ">>jit"
     replace: "https://meet.jit.si/nalmeida"
 
   # Dates & Time
