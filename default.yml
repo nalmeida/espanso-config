@@ -40,7 +40,7 @@ matches:
     replace: "¯\\_(ツ)_/¯"
 
   - trigger: ":ye"
-    replace: "ᕙ(ºL,º)ᕗ"
+    replace: "ᕙ (ºLº,) ᕗ"
 
   - trigger: ":fuck"
     replace: "(⋟﹏⋞)"
