@@ -96,6 +96,15 @@ matches:
         params:
           format: "%Hh%M"
 
+  - trigger: "gtime"
+    replace: "{{gmt_time}}"
+    vars:
+      - name: gmt_time
+        type: date
+        params:
+          format: "%Hh%M"
+          offset: 10800
+
   # HTML
 
   - trigger: ">>lorem"
