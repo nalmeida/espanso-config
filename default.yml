@@ -80,6 +80,14 @@ matches:
         params:
           format: "%d/%m/%Y"
 
+  - trigger: "usdate"
+    replace: "{{usdate}}"
+    vars:
+      - name: usdate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
   - trigger: "fdate"
     replace: "{{fdate}}"
     vars:
